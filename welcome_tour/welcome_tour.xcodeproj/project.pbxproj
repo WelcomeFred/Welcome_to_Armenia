@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		836E72D725DFA15300EC2631 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72D525DFA15300EC2631 /* RoundedShadowView.swift */; };
 		836E72D825DFA15300EC2631 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72D625DFA15300EC2631 /* RoundedView.swift */; };
+		836E72E025DFAB3900EC2631 /* HomeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72DF25DFAB3900EC2631 /* HomeTableVC.swift */; };
+		836E72E325DFAB6F00EC2631 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72E225DFAB6F00EC2631 /* PlaceTableViewCell.swift */; };
+		836E72EA25DFD62400EC2631 /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72E925DFD62400EC2631 /* DescriptionVC.swift */; };
+		836E72EE25DFD63700EC2631 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72ED25DFD63700EC2631 /* MapVC.swift */; };
+		836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F025DFD65400EC2631 /* ARkitVC.swift */; };
+		836E72F525DFD7ED00EC2631 /* PlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F425DFD7ED00EC2631 /* PlaceVC.swift */; };
+		836E72F925DFDAEF00EC2631 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F825DFDAEF00EC2631 /* CarouselCollectionViewCell.swift */; };
+		836E72FD25E03C5A00EC2631 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72FC25E03C5A00EC2631 /* DesignableImageView.swift */; };
 		CECA7D9425DAD97900E7127E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA7D9325DAD97900E7127E /* AppDelegate.swift */; };
 		CECA7D9625DAD97900E7127E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA7D9525DAD97900E7127E /* SceneDelegate.swift */; };
 		CECA7D9825DAD97900E7127E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECA7D9725DAD97900E7127E /* ViewController.swift */; };
@@ -20,6 +28,14 @@
 /* Begin PBXFileReference section */
 		836E72D525DFA15300EC2631 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		836E72D625DFA15300EC2631 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		836E72DF25DFAB3900EC2631 /* HomeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableVC.swift; sourceTree = "<group>"; };
+		836E72E225DFAB6F00EC2631 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		836E72E925DFD62400EC2631 /* DescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
+		836E72ED25DFD63700EC2631 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		836E72F025DFD65400EC2631 /* ARkitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARkitVC.swift; sourceTree = "<group>"; };
+		836E72F425DFD7ED00EC2631 /* PlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVC.swift; sourceTree = "<group>"; };
+		836E72F825DFDAEF00EC2631 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		836E72FC25E03C5A00EC2631 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		CECA7D9025DAD97900E7127E /* welcome_tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = welcome_tour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECA7D9325DAD97900E7127E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECA7D9525DAD97900E7127E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +62,7 @@
 			children = (
 				836E72D525DFA15300EC2631 /* RoundedShadowView.swift */,
 				836E72D625DFA15300EC2631 /* RoundedView.swift */,
+				836E72FC25E03C5A00EC2631 /* DesignableImageView.swift */,
 			);
 			path = Addition;
 			sourceTree = "<group>";
@@ -63,6 +80,9 @@
 		836E72DB25DFA1F400EC2631 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				836E72E825DFD60300EC2631 /* Place */,
+				836E72DF25DFAB3900EC2631 /* HomeTableVC.swift */,
+				836E72E225DFAB6F00EC2631 /* PlaceTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -79,6 +99,18 @@
 			children = (
 			);
 			path = More;
+			sourceTree = "<group>";
+		};
+		836E72E825DFD60300EC2631 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				836E72F425DFD7ED00EC2631 /* PlaceVC.swift */,
+				836E72E925DFD62400EC2631 /* DescriptionVC.swift */,
+				836E72F825DFDAEF00EC2631 /* CarouselCollectionViewCell.swift */,
+				836E72ED25DFD63700EC2631 /* MapVC.swift */,
+				836E72F025DFD65400EC2631 /* ARkitVC.swift */,
+			);
+			path = Place;
 			sourceTree = "<group>";
 		};
 		CECA7D8725DAD97900E7127E = {
@@ -183,10 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836E72FD25E03C5A00EC2631 /* DesignableImageView.swift in Sources */,
 				836E72D725DFA15300EC2631 /* RoundedShadowView.swift in Sources */,
+				836E72F525DFD7ED00EC2631 /* PlaceVC.swift in Sources */,
+				836E72EA25DFD62400EC2631 /* DescriptionVC.swift in Sources */,
 				CECA7D9825DAD97900E7127E /* ViewController.swift in Sources */,
+				836E72F925DFDAEF00EC2631 /* CarouselCollectionViewCell.swift in Sources */,
+				836E72E025DFAB3900EC2631 /* HomeTableVC.swift in Sources */,
+				836E72E325DFAB6F00EC2631 /* PlaceTableViewCell.swift in Sources */,
+				836E72EE25DFD63700EC2631 /* MapVC.swift in Sources */,
 				CECA7D9425DAD97900E7127E /* AppDelegate.swift in Sources */,
 				836E72D825DFA15300EC2631 /* RoundedView.swift in Sources */,
+				836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */,
 				CECA7D9625DAD97900E7127E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
