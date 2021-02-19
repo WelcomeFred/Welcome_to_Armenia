@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NF8-GP-4J7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -80,12 +80,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u75-kW-Zoi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1202.8985507246377" y="405.13392857142856"/>
+            <point key="canvasLocation" x="-292.75362318840581" y="405.13392857142856"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="ENY-jz-Xch">
             <objects>
-                <viewController storyboardIdentifier="HomePage" modalPresentationStyle="fullScreen" id="50m-YB-1eu" customClass="HomePage" customModule="ProjectStruct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="50m-YB-1eu" customClass="HomePage" customModule="welcome_tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F24-71-trs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="171" id="NWQ-20-XPj" customClass="MyTableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="171" id="NWQ-20-XPj" customClass="MyTableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NWQ-20-XPj" id="ZiL-Oo-xqN">
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fz-Pi-0ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1203" y="-362"/>
+            <point key="canvasLocation" x="-294.20289855072468" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="i2c-gd-4om">
@@ -227,7 +227,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="548-iU-C81">
             <objects>
-                <tabBarController storyboardIdentifier="Base_TabBar" modalPresentationStyle="fullScreen" id="ByO-5p-xWk" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="ByO-5p-xWk" sceneMemberID="viewController">
                     <tabBar key="tabBar" alpha="0.89999997615814209" contentMode="bottom" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="dKM-2y-HHh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -283,7 +283,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="100" id="aKI-ua-TKx" customClass="Audio_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="100" id="aKI-ua-TKx" customClass="Audio_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aKI-ua-TKx" id="qvi-cW-joE">
@@ -334,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUC-rl-HyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="-362"/>
+            <point key="canvasLocation" x="902.89855072463774" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eKV-Kr-1k9">
@@ -478,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxk-O4-Dqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="404.46428571428572"/>
+            <point key="canvasLocation" x="902.89855072463774" y="404.46428571428572"/>
         </scene>
         <!--More-->
         <scene sceneID="ocz-Hl-vit">
@@ -519,7 +519,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="GFC-Td-jHl" customClass="More_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="GFC-Td-jHl" customClass="More_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GFC-Td-jHl" id="zaw-yw-wb2">
@@ -539,7 +539,7 @@
                                             <outlet property="moreLbl" destination="63H-pw-q5e" id="kiw-Ij-SMl"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="ch9-59-Vtc" customClass="More_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell2" rowHeight="62" id="ch9-59-Vtc" customClass="More_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ch9-59-Vtc" id="JdG-1q-8PO">
@@ -559,7 +559,7 @@
                                             <outlet property="moreLbl" destination="dDb-Kk-Cq5" id="vne-st-lVf"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="Lsk-Dp-fJO" customClass="More_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell3" rowHeight="62" id="Lsk-Dp-fJO" customClass="More_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="152" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lsk-Dp-fJO" id="lNh-lv-ytO">
@@ -597,12 +597,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ge0-2w-y6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="-362"/>
+            <point key="canvasLocation" x="1950.7246376811595" y="-362.27678571428572"/>
         </scene>
         <!--Language Table View Controller-->
         <scene sceneID="aU9-cd-5d1">
             <objects>
-                <viewController storyboardIdentifier="Language_TableViewController" modalPresentationStyle="fullScreen" id="8bv-3L-AxR" customClass="Language_TableViewController" customModule="ProjectStruct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="8bv-3L-AxR" customClass="Language_TableViewController" customModule="welcome_tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0lQ-an-JMn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,7 +636,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="60" id="zot-6j-qYk" customClass="Language_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCellEng" rowHeight="60" id="zot-6j-qYk" customClass="Language_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zot-6j-qYk" id="eAJ-rP-Umh">
@@ -659,7 +659,7 @@
                                             <outlet property="languageLbl" destination="osQ-Ml-5R2" id="HpU-sV-ymH"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="60" id="qzP-Ai-UX1" customClass="Language_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCellArm" rowHeight="60" id="qzP-Ai-UX1" customClass="Language_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qzP-Ai-UX1" id="kMZ-B3-iDr">
@@ -682,7 +682,7 @@
                                             <outlet property="languageLbl" destination="c2e-3d-5PL" id="jDx-bq-enh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="60" id="7gW-ol-0pf" customClass="Language_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCellRus" rowHeight="60" id="7gW-ol-0pf" customClass="Language_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7gW-ol-0pf" id="zUA-Ua-s9g">
@@ -764,7 +764,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJo-du-eQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300.0000000000005" y="-361.60714285714283"/>
+            <point key="canvasLocation" x="4210.144927536232" y="-361.60714285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="C4o-ST-GbU">
@@ -834,7 +834,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eI-wq-tAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2275" y="165"/>
+            <point key="canvasLocation" x="3184.057971014493" y="164.73214285714286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fIU-yw-Pvp">
@@ -876,7 +876,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouU-MI-fcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2110" y="-362"/>
+            <point key="canvasLocation" x="-1200" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eAt-Vk-ff1">
@@ -929,7 +929,7 @@
         <!--View Controller-->
         <scene sceneID="eK3-5B-WJB">
             <objects>
-                <viewController storyboardIdentifier="SegmentedControl" id="2fw-8r-0LQ" sceneMemberID="viewController">
+                <viewController id="2fw-8r-0LQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ffT-EF-o3U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -998,12 +998,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDt-nb-aWF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1202.8985507246377" y="405.13392857142856"/>
+            <point key="canvasLocation" x="-292.75362318840581" y="405.13392857142856"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="3EC-T5-WSS">
             <objects>
-                <viewController storyboardIdentifier="HomePage" modalPresentationStyle="fullScreen" id="UyQ-Rw-oEb" customClass="HomePage" customModule="ProjectStruct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePage" modalPresentationStyle="fullScreen" id="UyQ-Rw-oEb" customClass="HomePage" customModule="welcome_tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C3i-QV-pDC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1031,7 +1031,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="171" id="6wj-iM-dZf" customClass="MyTableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.80000001192092896" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="171" id="6wj-iM-dZf" customClass="MyTableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6wj-iM-dZf" id="HgT-DW-Ueh">
@@ -1096,7 +1096,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wsx-q6-xhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1203" y="-362"/>
+            <point key="canvasLocation" x="-294.20289855072468" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Msl-dy-gCf">
@@ -1201,7 +1201,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="100" id="k4M-Tp-SbF" customClass="Audio_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="100" id="k4M-Tp-SbF" customClass="Audio_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k4M-Tp-SbF" id="UMc-yz-K8l">
@@ -1252,7 +1252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lpq-uP-Mv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="-362"/>
+            <point key="canvasLocation" x="902.89855072463774" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="weO-Pj-Ujx">
@@ -1396,7 +1396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffI-RB-O3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7.2463768115942031" y="404.46428571428572"/>
+            <point key="canvasLocation" x="902.89855072463774" y="404.46428571428572"/>
         </scene>
         <!--More-->
         <scene sceneID="rRr-bc-q1J">
@@ -1437,7 +1437,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="ATs-0J-Dnv" customClass="More_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="ATs-0J-Dnv" customClass="More_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ATs-0J-Dnv" id="jh6-ll-CBi">
@@ -1457,7 +1457,7 @@
                                             <outlet property="moreLbl" destination="hwC-FB-HJu" id="3aX-jL-ear"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="1QA-SH-fiz" customClass="More_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell2" rowHeight="62" id="1QA-SH-fiz" customClass="More_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1QA-SH-fiz" id="jqZ-BZ-bDb">
@@ -1477,7 +1477,7 @@
                                             <outlet property="moreLbl" destination="qpg-RQ-cmE" id="tmQ-ch-L47"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell1" rowHeight="62" id="E1T-Sz-9YK" customClass="More_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" showsReorderControl="YES" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell3" rowHeight="62" id="E1T-Sz-9YK" customClass="More_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="152" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E1T-Sz-9YK" id="wYy-3v-mVm">
@@ -1515,12 +1515,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0IJ-of-qws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="-362"/>
+            <point key="canvasLocation" x="1950.7246376811595" y="-362.27678571428572"/>
         </scene>
         <!--Language Table View Controller-->
         <scene sceneID="HSA-wI-ifq">
             <objects>
-                <viewController storyboardIdentifier="Language_TableViewController" modalPresentationStyle="fullScreen" id="N5q-ne-Uv8" customClass="Language_TableViewController" customModule="ProjectStruct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Language_TableViewController" modalPresentationStyle="fullScreen" id="N5q-ne-Uv8" customClass="Language_TableViewController" customModule="welcome_tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Czr-3C-fSw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1554,7 +1554,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="60" id="Du7-TX-Jd3" customClass="Language_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCellEng" rowHeight="60" id="Du7-TX-Jd3" customClass="Language_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Du7-TX-Jd3" id="Tf3-yr-Upb">
@@ -1577,7 +1577,7 @@
                                             <outlet property="languageLbl" destination="a11-K2-nP4" id="cie-XQ-eC7"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="60" id="nnt-jX-Vga" customClass="Language_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCellArm" rowHeight="60" id="nnt-jX-Vga" customClass="Language_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nnt-jX-Vga" id="vEd-Nd-pQW">
@@ -1600,7 +1600,7 @@
                                             <outlet property="languageLbl" destination="wNz-at-kOH" id="9MM-I4-pRh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="60" id="F8q-a8-Kmh" customClass="Language_TableViewCell" customModule="ProjectStruct" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCellRus" rowHeight="60" id="F8q-a8-Kmh" customClass="Language_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F8q-a8-Kmh" id="T1P-MF-lxT">
@@ -1642,7 +1642,7 @@
         <!--View Controller-->
         <scene sceneID="DAI-q9-OP6">
             <objects>
-                <viewController storyboardIdentifier="Help_CollectionViewController" modalPresentationStyle="fullScreen" id="GZx-di-XAS" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="GZx-di-XAS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bQR-RL-pt4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1682,7 +1682,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIB-Z3-T1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300.0000000000005" y="-361.60714285714283"/>
+            <point key="canvasLocation" x="4210.144927536232" y="-361.60714285714283"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="55R-2W-v1H">
+            <objects>
+                <tableViewController id="47C-xY-Any" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3lu-sY-H91">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="261" id="uSg-jK-2dp">
+                                <rect key="frame" x="0.0" y="28" width="414" height="261"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uSg-jK-2dp" id="JXr-kc-bZT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75S-4u-9Zg">
+                                            <rect key="frame" x="87" y="66" width="240" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="47C-xY-Any" id="xRi-bD-3ez"/>
+                            <outlet property="delegate" destination="47C-xY-Any" id="0Ws-wg-XUP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="acv-Mc-rAS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQF-4F-OXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2371.0144927536235" y="-372.32142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0aH-T5-WsF">
@@ -1752,7 +1788,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8T-hm-oys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2275" y="165"/>
+            <point key="canvasLocation" x="3184.057971014493" y="164.73214285714286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wHe-vp-Ybu">
@@ -1794,7 +1830,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVo-Cx-Ask" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2110" y="-362"/>
+            <point key="canvasLocation" x="-1200" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TFa-H4-wR4">
@@ -1844,6 +1880,24 @@
             </objects>
             <point key="canvasLocation" x="-407.24637681159425" y="1054.6875"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0LW-dE-BcC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NF8-GP-4J7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AC0-gA-w07">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="47C-xY-Any" kind="relationship" relationship="rootViewController" id="9kF-bp-8Qd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="169-d3-f8k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3299" y="-372"/>
+        </scene>
     </scenes>
     <resources>
         <image name="araj" width="32" height="32"/>
@@ -1861,30 +1915,6 @@
         <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
