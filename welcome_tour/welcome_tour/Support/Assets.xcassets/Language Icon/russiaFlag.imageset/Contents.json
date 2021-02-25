@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "200-2006613_download-flag-icon-of-russia-at-png-format-russia-flag-png.png.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
