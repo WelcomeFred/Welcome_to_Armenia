@@ -19,7 +19,9 @@ class VideoVC: UIViewController {
         self.perform(#selector(goToHomePage), with: nil, afterDelay: 6.24)
     }
         
-    
+    override var prefersStatusBarHidden: Bool { //hiding status bar
+        return true
+    }
         
     func videoPlay() {
         let URL = Bundle.main.url(forResource: "video", withExtension: ".mp4")

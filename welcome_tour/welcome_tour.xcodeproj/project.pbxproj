@@ -12,6 +12,7 @@
 		836E72EE25DFD63700EC2631 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72ED25DFD63700EC2631 /* MapVC.swift */; };
 		836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F025DFD65400EC2631 /* ARkitVC.swift */; };
 		836E72F525DFD7ED00EC2631 /* PlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F425DFD7ED00EC2631 /* PlaceVC.swift */; };
+		8396DBFC25E938B0007C0BD1 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396DBFB25E938B0007C0BD1 /* HelpVC.swift */; };
 		CE191D8A25E60F06000A2A51 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE191D8925E60F06000A2A51 /* video.mp4 */; };
 		CE191D9725E6630A000A2A51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE191D9925E6630A000A2A51 /* Localizable.strings */; };
 		CE191D9D25E663C0000A2A51 /* LocalizableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191D9C25E663C0000A2A51 /* LocalizableManager.swift */; };
@@ -46,6 +47,7 @@
 		836E72ED25DFD63700EC2631 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		836E72F025DFD65400EC2631 /* ARkitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARkitVC.swift; sourceTree = "<group>"; };
 		836E72F425DFD7ED00EC2631 /* PlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVC.swift; sourceTree = "<group>"; };
+		8396DBFB25E938B0007C0BD1 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		CE191D8925E60F06000A2A51 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		CE191D9825E6630A000A2A51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE191D9A25E6632D000A2A51 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		CE191DBF25E69A8E000A2A51 /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				8396DBFB25E938B0007C0BD1 /* HelpVC.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				CE191DB425E66E53000A2A51 /* LanguageTableViewCell.swift in Sources */,
 				CE962CCC25E53EE6002EAF55 /* HomePageVC.swift in Sources */,
 				CE191DB825E66EEF000A2A51 /* LanguageViewController.swift in Sources */,
+				8396DBFC25E938B0007C0BD1 /* HelpVC.swift in Sources */,
 				CE962CCF25E541B0002EAF55 /* MyTableViewCell.swift in Sources */,
 				CE962CB825E103A8002EAF55 /* MyButton.swift in Sources */,
 				CE962C9425E0D6C9002EAF55 /* Audio_TableViewCell.swift in Sources */,
