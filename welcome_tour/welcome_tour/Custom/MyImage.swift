@@ -10,20 +10,27 @@ import UIKit
 @IBDesignable
 
 class MyImage: UIImageView {
-    
-  @IBInspectable var CornerRadius: CGFloat = 0 {
-    didSet {
-      layer.cornerRadius = CornerRadius
+    @IBInspectable var radius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
     }
-  }
-  @IBInspectable var BorderColor: UIColor = .blue {
-    didSet {
-      layer.borderColor = BorderColor.cgColor
+
+    @IBInspectable var borderWidth: CGFloat {
+        set { layer.borderWidth = newValue }
+        get { return layer.borderWidth }
     }
-  }
-  @IBInspectable var BorderWith: CGFloat = 0 {
-    didSet {
-      layer.borderWidth = BorderWith
+
+    @IBInspectable var borderColor: UIColor {
+        set { layer.borderColor = newValue.cgColor }
+        get { return UIColor(cgColor: layer.borderColor!) }
     }
-  }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        clipsToBounds = true
+    }
 }

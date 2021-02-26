@@ -10,6 +10,7 @@ import UIKit
 class HomePageVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let TABLE_VIEW_CELL_HEIGHT: CGFloat = 200
     
     
     
@@ -97,13 +98,13 @@ extension HomePageVC: UITableViewDataSource, UITableViewDelegate {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyTableViewCell
         
-        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowColor = UIColor.blue.cgColor
-        cell.layer.shadowRadius = 4
-        cell.layer.shadowOpacity = 0.25
-        cell.layer.cornerRadius = 20
-        cell.layer.masksToBounds = false
-        cell.clipsToBounds = true
+//        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+//        cell.layer.shadowColor = UIColor.blue.cgColor
+//        cell.layer.shadowRadius = 4
+//        cell.layer.shadowOpacity = 0.25
+//        cell.layer.cornerRadius = 20
+//        cell.layer.masksToBounds = false
+//        cell.clipsToBounds = true
     
         cell.img.image = UIImage(named: imagesArray[indexPath.row])
         cell.placeLbl.text = LocalizableManager.getLocalizable(key: self.placeArray[indexPath.row])
@@ -115,7 +116,7 @@ extension HomePageVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 171
+        return TABLE_VIEW_CELL_HEIGHT
     }
     
 
