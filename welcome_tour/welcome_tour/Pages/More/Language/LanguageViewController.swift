@@ -64,17 +64,17 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
             switch indexPath.row {
             case 0:
                 LocalizableManager.type = "en"
-//                    dismiss(animated: true, completion: nil)
-                goToMorePage()
+                    dismiss(animated: true, completion: nil)
+//                goToMorePage()
             case 1:
                 LocalizableManager.type = "hy"
-//                    dismiss(animated: true, completion: nil)
-                goToMorePage()
+                    dismiss(animated: true, completion: nil)
+//                goToMorePage()
 
             case 2:
                 LocalizableManager.type = "ru"
-//                    dismiss(animated: true, completion: nil)
-                goToMorePage()
+                    dismiss(animated: true, completion: nil)
+//                goToMorePage()
 
             default:
                 break
