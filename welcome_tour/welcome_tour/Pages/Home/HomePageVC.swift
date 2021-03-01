@@ -10,7 +10,7 @@ import UIKit
 class HomePageVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    let TABLE_VIEW_CELL_HEIGHT: CGFloat = 180
+    let TABLE_VIEW_CELL_HEIGHT: CGFloat = 170
     
     
     
@@ -68,7 +68,7 @@ class HomePageVC: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +77,7 @@ class HomePageVC: UIViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
+        self.navigationController?.isNavigationBarHidden = true
             return .default
     }
     
