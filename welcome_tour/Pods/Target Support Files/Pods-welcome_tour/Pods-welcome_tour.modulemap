@@ -1,0 +1,6 @@
+framework module Pods_welcome_tour {
+  umbrella header "Pods-welcome_tour-umbrella.h"
+
+  export *
+  module * { export * }
+}
