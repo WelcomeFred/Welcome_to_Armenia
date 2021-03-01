@@ -42,7 +42,7 @@ final class RoundedShadowView: UIView {
         layer.shadowColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         //layer.shadowColor = UIColor(red: 0.87, green: 0.87, blue: 0.87, alpha: 1).cgColor
         layer.shadowOffset = CGSize(width: 0, height: 1)
-        layer.shadowOpacity = 0.5
+        layer.shadowOpacity = 0.8
         layer.masksToBounds = false
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
     }

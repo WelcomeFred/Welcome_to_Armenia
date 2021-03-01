@@ -7,5 +7,6 @@ target 'welcome_tour' do
 
   # Pods for welcome_tour
 pod 'iCarousel'
+pod 'ImageSlideshow', '~> 1.9.0'
 
 end

@@ -10,7 +10,7 @@ import UIKit
 class HomePageVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    let TABLE_VIEW_CELL_HEIGHT: CGFloat = 200
+    let TABLE_VIEW_CELL_HEIGHT: CGFloat = 180
     
     
     
@@ -117,6 +117,10 @@ extension HomePageVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return TABLE_VIEW_CELL_HEIGHT
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailedSegue", sender: nil)
     }
     
 

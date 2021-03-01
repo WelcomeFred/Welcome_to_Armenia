@@ -88,7 +88,7 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
 //    }
     @objc func goToMorePage() {
             
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MoreVC") as? MoreVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MoreVCNavigation")
             
         self.present(vc!, animated: true, completion: nil)
     }

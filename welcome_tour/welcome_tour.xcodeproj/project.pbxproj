@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,9 @@
 		836E72D825DFA15300EC2631 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72D625DFA15300EC2631 /* RoundedView.swift */; };
 		836E72EE25DFD63700EC2631 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72ED25DFD63700EC2631 /* MapVC.swift */; };
 		836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F025DFD65400EC2631 /* ARkitVC.swift */; };
-		836E72F525DFD7ED00EC2631 /* PlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F425DFD7ED00EC2631 /* PlaceVC.swift */; };
+		836E72F525DFD7ED00EC2631 /* SegmentedControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F425DFD7ED00EC2631 /* SegmentedControlVC.swift */; };
 		8396DBFC25E938B0007C0BD1 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396DBFB25E938B0007C0BD1 /* HelpVC.swift */; };
+		839AD33925ED439100E09B2C /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AD33825ED439100E09B2C /* DescriptionVC.swift */; };
 		83A8DC4425EB922E008C73BD /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8DC4325EB922E008C73BD /* RoundedImage.swift */; };
 		CE191D8A25E60F06000A2A51 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE191D8925E60F06000A2A51 /* video.mp4 */; };
 		CE191D9725E6630A000A2A51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE191D9925E6630A000A2A51 /* Localizable.strings */; };
@@ -49,8 +50,9 @@
 		836E72D625DFA15300EC2631 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		836E72ED25DFD63700EC2631 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		836E72F025DFD65400EC2631 /* ARkitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARkitVC.swift; sourceTree = "<group>"; };
-		836E72F425DFD7ED00EC2631 /* PlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVC.swift; sourceTree = "<group>"; };
+		836E72F425DFD7ED00EC2631 /* SegmentedControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlVC.swift; sourceTree = "<group>"; };
 		8396DBFB25E938B0007C0BD1 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		839AD33825ED439100E09B2C /* DescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		83A8DC4325EB922E008C73BD /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		CE191D8925E60F06000A2A51 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		CE191D9825E6630A000A2A51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -102,7 +104,6 @@
 				6B1ECFD827C90EB6DA8E34AE /* Pods-welcome_tour.debug.xcconfig */,
 				468A11427F59475C28446B91 /* Pods-welcome_tour.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,7 +160,8 @@
 		CE191DA225E665AB000A2A51 /* SegmentedControlVC */ = {
 			isa = PBXGroup;
 			children = (
-				836E72F425DFD7ED00EC2631 /* PlaceVC.swift */,
+				836E72F425DFD7ED00EC2631 /* SegmentedControlVC.swift */,
+				839AD33825ED439100E09B2C /* DescriptionVC.swift */,
 				836E72ED25DFD63700EC2631 /* MapVC.swift */,
 				836E72F025DFD65400EC2631 /* ARkitVC.swift */,
 			);
@@ -410,7 +412,8 @@
 				CE962C8925E0D606002EAF55 /* Library.swift in Sources */,
 				83A8DC4425EB922E008C73BD /* RoundedImage.swift in Sources */,
 				836E72D725DFA15300EC2631 /* RoundedShadowView.swift in Sources */,
-				836E72F525DFD7ED00EC2631 /* PlaceVC.swift in Sources */,
+				839AD33925ED439100E09B2C /* DescriptionVC.swift in Sources */,
+				836E72F525DFD7ED00EC2631 /* SegmentedControlVC.swift in Sources */,
 				CE191DA925E66848000A2A51 /* MoreTableViewCell.swift in Sources */,
 				CE191D9D25E663C0000A2A51 /* LocalizableManager.swift in Sources */,
 				CE191DB425E66E53000A2A51 /* LanguageTableViewCell.swift in Sources */,
@@ -517,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -573,7 +576,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -592,6 +595,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = welcome_tour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,7 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -613,6 +617,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = welcome_tour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,7 +625,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "a.welcome-tour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
