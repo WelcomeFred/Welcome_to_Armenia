@@ -20,6 +20,12 @@ class HelpVC: UIViewController, iCarouselDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        self.title = LocalizableManager.getLocalizable(key: "Help")
         view.addSubview(myCarousel )
         myCarousel.dataSource = self
         

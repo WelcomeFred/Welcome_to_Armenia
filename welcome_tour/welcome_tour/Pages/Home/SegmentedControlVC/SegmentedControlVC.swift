@@ -11,6 +11,7 @@ class SegmentedControlVC: UIViewController {
     @IBOutlet weak var descriptionContainerView: UIView!
     @IBOutlet weak var mapContainerView: UIView!
     @IBOutlet weak var arContainerView: UIView!
+    var place = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         mapContainerView.isHidden = true
@@ -20,6 +21,7 @@ class SegmentedControlVC: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
+        self.title = place
     }
 
 

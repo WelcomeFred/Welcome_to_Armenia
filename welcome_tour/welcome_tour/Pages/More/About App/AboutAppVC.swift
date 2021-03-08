@@ -17,10 +17,15 @@ class AboutAppVC: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        self.title = LocalizableManager.getLocalizable(key: "AboutApp")
         titleBlurEffect.alpha = 0.8
-        effect.alpha = 0.4
-        effect.backgroundColor = .white
+//        effect.alpha = 0.4
+//        effect.backgroundColor = .white
         
         self.descriptionText.delegate = self
         titleName.text = LocalizableManager.getLocalizable(key: "AboutApp")

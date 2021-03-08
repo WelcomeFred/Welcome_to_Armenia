@@ -11,10 +11,7 @@ class HomePageVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let TABLE_VIEW_CELL_HEIGHT: CGFloat = 170
-    
-    
-    
-    
+
     var descriptionsArray = ["a1","a2","a3","a4","a5","a6","a7","a8","a9","a10","a11","a12","a13","a14","a15","a16","a17","a18","a19","a20","a21","a22","a23","a24","a25","a26","a27","a28","a29","a30","a31","a32","a33","a34","a35","a36"]
     
     var placeArray = ["AkhtalaMonastery","Amberd", "AragatsMount", "AraratMount", "ByurakanObservatory", "Gandzasar", "TempleOfGarni", "Geghard", "Dadivank", "Dvin", "ZoratsKarer", "Zvartnots", "EtchmiadzinCathedral", "Lastiver", "KhorVirap", "Tsitsernakaberd", "Kecharis", "Haghartsin", "HaghpatMonastery", "ArmenianAlphabetMonument", "Hankavan", "Ghazanchetsots", "MarmashenMonastery", "Marmarner", "WeAreOurMountainsTheMonument", "Noravank", "ShakiWaterfall", "JermukWaterfall", "Saghmosavank", "SanahinMonastery","Sardarapat", "LakeSevan", "TatevMonastery", "SymphonyOfStones", "Odzun", "Oshakan" ]
@@ -60,9 +57,7 @@ class HomePageVC: UIViewController {
                             "3h 0min", // Odzun
                             "34min" // Oshakan
                             ]
-    
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -116,12 +111,14 @@ extension HomePageVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return TABLE_VIEW_CELL_HEIGHT
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "detailedSegue", sender: nil)
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SegmentedControlVC") as! SegmentedControlVC
+           vc.place = LocalizableManager.getLocalizable(key: self.placeArray[indexPath.row])
+           self.navigationController?.pushViewController(vc, animated: true)
     }
     
 
@@ -135,7 +132,7 @@ private func tableView(tableView: UITableView, willDisplayCell cell: UITableView
     // animation
     
      func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-         let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -40, 50, 0)
+         let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, 0, 50, 0)
          cell.layer.transform = rotationTransform
         cell.alpha = 0.7
          
