@@ -82,6 +82,10 @@
 
 
 // MARK: - Distance from Yerevan
+"distance" = "Distance from Yerevan is";
+"km" = "km";
+"hour" = "h";
+"min" = "min";
 
 "3h 24min" = "Distance from Yerevan is 179 km (3h 24min)";
 "1h 8min" = "Distance from Yerevan is 51.7 km (1h 8min)";

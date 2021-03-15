@@ -59,20 +59,20 @@ extension MoreVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MoreTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MoreTableViewCell
         
-        cell!.separatorInset = UIEdgeInsets.zero
-        cell!.preservesSuperviewLayoutMargins = false
-        cell!.layoutMargins = UIEdgeInsets.zero
-        cell!.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell!.layer.shadowColor = UIColor.blue.cgColor
-        cell!.layer.shadowRadius = 2
-        cell!.layer.shadowOpacity = 0.25
-        cell!.layer.masksToBounds = false;
-        cell!.clipsToBounds = false;
-        cell?.moreLbl.text = LocalizableManager.getLocalizable(key: self.nameSetings[indexPath.row])
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.preservesSuperviewLayoutMargins = false
+        cell.layoutMargins = UIEdgeInsets.zero
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        cell.layer.shadowColor = UIColor.blue.cgColor
+        cell.layer.shadowRadius = 2
+        cell.layer.shadowOpacity = 0.25
+        cell.layer.masksToBounds = false;
+        cell.clipsToBounds = false;
+        cell.moreLbl.text = LocalizableManager.getLocalizable(key: self.nameSetings[indexPath.row])
         
-        return cell!
+        return cell
         
     }
     

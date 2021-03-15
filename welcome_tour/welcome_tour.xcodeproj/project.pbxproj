@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5EB353B91A0F2C92D5AC0BC6 /* Pods_welcome_tour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF73EADE25C888B4DD3BCC06 /* Pods_welcome_tour.framework */; };
+		831C04C425FA6287007A5659 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C04C325FA6287007A5659 /* DataModel.swift */; };
+		831C04DC25FB46EA007A5659 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C04DB25FB46EA007A5659 /* PlaceModel.swift */; };
+		831C04E025FB51BE007A5659 /* CoordinatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C04DF25FB51BE007A5659 /* CoordinatesModel.swift */; };
 		836E72D725DFA15300EC2631 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72D525DFA15300EC2631 /* RoundedShadowView.swift */; };
-		836E72D825DFA15300EC2631 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72D625DFA15300EC2631 /* RoundedView.swift */; };
 		836E72EE25DFD63700EC2631 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72ED25DFD63700EC2631 /* MapVC.swift */; };
 		836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F025DFD65400EC2631 /* ARkitVC.swift */; };
 		836E72F525DFD7ED00EC2631 /* SegmentedControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E72F425DFD7ED00EC2631 /* SegmentedControlVC.swift */; };
@@ -31,7 +33,6 @@
 		CE962CA025E0FE89002EAF55 /* 0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE962C9F25E0FE89002EAF55 /* 0.mp3 */; };
 		CE962CA425E0FEAF002EAF55 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE962CA225E0FEAF002EAF55 /* 2.mp3 */; };
 		CE962CA925E0FEC0002EAF55 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE962CA825E0FEC0002EAF55 /* 1.mp3 */; };
-		CE962CB825E103A8002EAF55 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962CB725E103A8002EAF55 /* MyButton.swift */; };
 		CE962CCC25E53EE6002EAF55 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962CCB25E53EE6002EAF55 /* HomePageVC.swift */; };
 		CE962CCF25E541B0002EAF55 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962CCE25E541B0002EAF55 /* MyTableViewCell.swift */; };
 		CE962CDD25E57FD9002EAF55 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962CDC25E57FD9002EAF55 /* VideoVC.swift */; };
@@ -46,8 +47,10 @@
 /* Begin PBXFileReference section */
 		468A11427F59475C28446B91 /* Pods-welcome_tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-welcome_tour.release.xcconfig"; path = "Target Support Files/Pods-welcome_tour/Pods-welcome_tour.release.xcconfig"; sourceTree = "<group>"; };
 		6B1ECFD827C90EB6DA8E34AE /* Pods-welcome_tour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-welcome_tour.debug.xcconfig"; path = "Target Support Files/Pods-welcome_tour/Pods-welcome_tour.debug.xcconfig"; sourceTree = "<group>"; };
+		831C04C325FA6287007A5659 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		831C04DB25FB46EA007A5659 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		831C04DF25FB51BE007A5659 /* CoordinatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesModel.swift; sourceTree = "<group>"; };
 		836E72D525DFA15300EC2631 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
-		836E72D625DFA15300EC2631 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		836E72ED25DFD63700EC2631 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		836E72F025DFD65400EC2631 /* ARkitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARkitVC.swift; sourceTree = "<group>"; };
 		836E72F425DFD7ED00EC2631 /* SegmentedControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlVC.swift; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		CE962C9F25E0FE89002EAF55 /* 0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0.mp3; sourceTree = "<group>"; };
 		CE962CA225E0FEAF002EAF55 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
 		CE962CA825E0FEC0002EAF55 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
-		CE962CB725E103A8002EAF55 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		CE962CCB25E53EE6002EAF55 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		CE962CCE25E541B0002EAF55 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		CE962CDC25E57FD9002EAF55 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
@@ -115,12 +117,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		831C04DA25FB46C4007A5659 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				831C04C325FA6287007A5659 /* DataModel.swift */,
+				831C04DB25FB46EA007A5659 /* PlaceModel.swift */,
+				831C04DF25FB51BE007A5659 /* CoordinatesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		836E72D425DFA10F00EC2631 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				836E72D525DFA15300EC2631 /* RoundedShadowView.swift */,
-				836E72D625DFA15300EC2631 /* RoundedView.swift */,
-				CE962CB725E103A8002EAF55 /* MyButton.swift */,
 				83A8DC4325EB922E008C73BD /* RoundedImage.swift */,
 			);
 			path = Custom;
@@ -277,11 +287,12 @@
 		CECA7D9225DAD97900E7127E /* welcome_tour */ = {
 			isa = PBXGroup;
 			children = (
-				CE962CD525E542A3002EAF55 /* Support */,
 				836E72D425DFA10F00EC2631 /* Custom */,
-				836E72DA25DFA18E00EC2631 /* Pages */,
 				CE962CD625E54304002EAF55 /* Edit language */,
 				CECA7DA125DAD97C00E7127E /* Info.plist */,
+				831C04DA25FB46C4007A5659 /* Models */,
+				836E72DA25DFA18E00EC2631 /* Pages */,
+				CE962CD525E542A3002EAF55 /* Support */,
 			);
 			path = welcome_tour;
 			sourceTree = "<group>";
@@ -421,16 +432,17 @@
 				CE191DB825E66EEF000A2A51 /* LanguageViewController.swift in Sources */,
 				8396DBFC25E938B0007C0BD1 /* HelpVC.swift in Sources */,
 				CE962CCF25E541B0002EAF55 /* MyTableViewCell.swift in Sources */,
-				CE962CB825E103A8002EAF55 /* MyButton.swift in Sources */,
 				CE962C9425E0D6C9002EAF55 /* Audio_TableViewCell.swift in Sources */,
 				CE962CE025E58059002EAF55 /* TabBarController.swift in Sources */,
+				831C04DC25FB46EA007A5659 /* PlaceModel.swift in Sources */,
 				836E72EE25DFD63700EC2631 /* MapVC.swift in Sources */,
 				CECA7D9425DAD97900E7127E /* AppDelegate.swift in Sources */,
 				CE962CDD25E57FD9002EAF55 /* VideoVC.swift in Sources */,
-				836E72D825DFA15300EC2631 /* RoundedView.swift in Sources */,
+				831C04C425FA6287007A5659 /* DataModel.swift in Sources */,
 				836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */,
 				CECA7D9625DAD97900E7127E /* SceneDelegate.swift in Sources */,
 				CE962C9125E0D678002EAF55 /* Audio_TableViewController.swift in Sources */,
+				831C04E025FB51BE007A5659 /* CoordinatesModel.swift in Sources */,
 				CE191DA625E666DD000A2A51 /* MoreVC.swift in Sources */,
 				CE191DBD25E69952000A2A51 /* AboutAppVC.swift in Sources */,
 			);

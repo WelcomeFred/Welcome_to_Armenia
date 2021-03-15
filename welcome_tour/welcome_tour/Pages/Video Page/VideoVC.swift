@@ -7,26 +7,23 @@
 
 import UIKit
 import AVFoundation
-
 class VideoVC: UIViewController {
-
     var player: AVPlayer!
     var playerLayer: AVPlayerLayer!
-    
-
     override func viewDidAppear(_ animated: Bool) {
         videoPlay()
-        self.perform(#selector(goToHomePage), with: nil, afterDelay: 6.24)
     }
-        
     override var prefersStatusBarHidden: Bool { //hiding status bar
         return true
     }
-        
+    
     func videoPlay() {
-        let URL = Bundle.main.url(forResource: "video", withExtension: ".mp4")
-
-        player = AVPlayer.init(url: (URL)!)
+        let videoURL = Bundle.main.url(forResource: "video", withExtension: ".mp4")!
+        let item = AVPlayerItem(url: videoURL)
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: item, queue: .main) { _ in
+            self.goToHomePage()
+        }
+        player = AVPlayer(playerItem: item)
         playerLayer = AVPlayerLayer(player: player)
         playerLayer.videoGravity = AVLayerVideoGravity.resize
         playerLayer.frame = view.layer.frame
@@ -35,14 +32,8 @@ class VideoVC: UIViewController {
         player.play()
         view.layer.addSublayer(playerLayer)
     }
-        
-     
-        
-        
-    @objc func goToHomePage() {
-            
+    private func goToHomePage() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
-            
         self.present(vc!, animated: true, completion: nil)
     }
 }

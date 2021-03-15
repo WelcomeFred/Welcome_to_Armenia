@@ -18,8 +18,6 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
     
     var languagesArrey = ["English (EN)", "Հայերեն (AM)", "Русский (RU)"]
     var languageFlags = ["englandFlag", "armeniaFlag", "russiaFlag" ]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
@@ -36,7 +34,6 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         }
         languageTB.tableFooterView = UIView()
         self.title = LocalizableManager.getLocalizable(key: "Language")
-        
     }
     override func viewDidAppear(_ animated: Bool) {
         languageTB.frame = CGRect(x: languageTB.frame.origin.x, y: languageTB.frame.origin.y, width: languageTB.frame.size.width, height: languageTB.contentSize.height)
@@ -50,56 +47,33 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
-        
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.languagesArrey.count
-        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return TABLE_VIEW_CELL_HEIGHT
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath) as? LanguageTableViewCell
         cell?.languageLbl.text = self.languagesArrey[indexPath.row]
         cell?.img.image = UIImage(named: languageFlags[indexPath.row])
         return cell!
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
             LocalizableManager.type = "en"
-            //            dismiss(animated: true, completion: nil)
-            navigationController?.popViewController(animated: true)
-            UserDefaults.standard.set(LocalizableManager.type, forKey: systemLanguage)
         case 1:
             LocalizableManager.type = "hy"
-            //            dismiss(animated: true, completion: nil)
-            navigationController?.popViewController(animated: true)
-            UserDefaults.standard.set(LocalizableManager.type, forKey: systemLanguage)
         case 2:
             LocalizableManager.type = "ru"
-            //            dismiss(animated: true, completion: nil)
-            navigationController?.popViewController(animated: true)
-            UserDefaults.standard.set(LocalizableManager.type, forKey: systemLanguage)
         default:
             break
         }
+        UserDefaults.standard.set(LocalizableManager.type, forKey: systemLanguage)
+        navigationController?.popViewController(animated: true)
+        NotificationCenter.default.post(name: .language, object: nil)
+        }
     }
-    
-    //func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-    //
-    //     tableView.cellForRow(at: indexPath)?.accessoryType = .none
-    //
-    //    }
-    //    @objc func goToMorePage() {
-    //
-    //        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MoreVCNavigation")
-    //
-    //        self.present(vc!, animated: true, completion: nil)
-    //    }
-}
