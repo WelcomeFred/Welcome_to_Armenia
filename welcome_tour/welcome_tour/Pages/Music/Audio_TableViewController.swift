@@ -9,21 +9,19 @@ import UIKit
 
 class Audio_TableViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var titleBlurEffect: UIVisualEffectView!
-    
+    @IBOutlet weak var tableView: UITableView!    
     var library = MusicLibrary().library
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.titleBlurEffect.alpha = 0.8
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = false
+        self.title = LocalizableManager.getLocalizable(key:"Music")
+        navbarOptions()
         self.tableView.reloadData()
     }
 }

@@ -12,7 +12,8 @@ class MyTableViewCell: UITableViewCell {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var placeLbl: UILabel!
     @IBOutlet weak var regionLbl: UILabel!
-    @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var distanceLblText: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
     
     
 

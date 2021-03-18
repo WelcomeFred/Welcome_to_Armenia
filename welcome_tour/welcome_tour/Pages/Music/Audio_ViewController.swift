@@ -10,10 +10,6 @@ import AVFoundation
 
 class Audio_ViewController: UIViewController, AVAudioPlayerDelegate {
 
-    @IBOutlet weak var titleBlurEffect: UIVisualEffectView!
-    
-    @IBOutlet weak var effect: UIVisualEffectView!
-    
     @IBOutlet weak var coverImage: UIImageView!
     
     @IBOutlet weak var titleLbl: UILabel!
@@ -38,9 +34,6 @@ class Audio_ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.titleBlurEffect.alpha = 0.8
-//        self.effect.alpha = 0.5
         
         if let cover = library[trackID]["cover"] {
             coverImage.image = UIImage(named: "\(cover).jpg")

@@ -11,10 +11,6 @@ class MoreVC: UIViewController {
     
     @IBOutlet weak var more_tableView: UITableView!
     
-    @IBOutlet weak var titleName: UILabel!
-    
-    @IBOutlet weak var titleBlurEffect: UIVisualEffectView!
-    
     var nameSetings = ["Language", "Help", "AboutApp"]
     
     override func viewDidLoad() {
@@ -23,15 +19,11 @@ class MoreVC: UIViewController {
         self.more_tableView.delegate = self
         self.more_tableView.dataSource = self
         self.more_tableView.separatorStyle = .none
-        self.titleBlurEffect.alpha = 0.8
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
-        titleName.text = LocalizableManager.getLocalizable(key: "More")
-        
-        if LocalizableManager.type == "hy" {
-            titleName.font = titleName.font.withSize(27)
-        }
+        self.navigationController?.isNavigationBarHidden = false
+        navbarOptions()
+        self.title = LocalizableManager.getLocalizable(key: "More")
         self.more_tableView.reloadData()
     }
     

@@ -10,8 +10,6 @@ import iCarousel
 
 class HelpVC: UIViewController, iCarouselDataSource {
     
-    @IBOutlet weak var titleBlurEffect: UIVisualEffectView!
-    @IBOutlet weak var titleName: UILabel!
     let myCarousel: iCarousel = {
         let view = iCarousel()
         view.type = .coverFlow /* cylndr , rotary , */

@@ -8,7 +8,7 @@
 import UIKit
 
 class LocalizableManager: NSObject {
-
+    
     static var type: String = "en"
     
     static func getLocalizable(key: String) -> String {

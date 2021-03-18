@@ -9,9 +9,6 @@ import UIKit
 
 class AboutAppVC: UIViewController, UITextViewDelegate {
 
-    @IBOutlet weak var effect: UIVisualEffectView!
-    @IBOutlet weak var titleBlurEffect: UIVisualEffectView!
-    @IBOutlet weak var titleName: UILabel!
     @IBOutlet weak var descriptionText: UITextView!
     
     
@@ -23,17 +20,9 @@ class AboutAppVC: UIViewController, UITextViewDelegate {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         self.title = LocalizableManager.getLocalizable(key: "AboutApp")
-        titleBlurEffect.alpha = 0.8
-//        effect.alpha = 0.4
-//        effect.backgroundColor = .white
         
         self.descriptionText.delegate = self
-        titleName.text = LocalizableManager.getLocalizable(key: "AboutApp")
         descriptionText.text = LocalizableManager.getLocalizable(key: "description")
-        if LocalizableManager.type == "hy" {
-            titleName.font = titleName.font.withSize(24)
-        }
-
         
     }
     

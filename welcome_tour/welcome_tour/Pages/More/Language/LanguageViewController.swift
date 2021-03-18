@@ -11,9 +11,6 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
     
     let TABLE_VIEW_CELL_HEIGHT: CGFloat = 60
     
-    @IBOutlet weak var titleBlurEffect: UIVisualEffectView!
-    @IBOutlet weak var titleName: UILabel!
-    
     @IBOutlet weak var languageTB: UITableView!
     
     var languagesArrey = ["English (EN)", "Հայերեն (AM)", "Русский (RU)"]
@@ -27,11 +24,6 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.view.backgroundColor = .clear
         self.languageTB.delegate = self
         self.languageTB.dataSource = self
-        self.titleBlurEffect.alpha = 0.8
-        titleName.text = LocalizableManager.getLocalizable(key: "Language")
-        if LocalizableManager.type == "hy" {
-            titleName.font = titleName.font.withSize(27)
-        }
         languageTB.tableFooterView = UIView()
         self.title = LocalizableManager.getLocalizable(key: "Language")
     }

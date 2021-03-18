@@ -15,17 +15,9 @@ class SegmentedControlVC: UIViewController {
     var place = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-//        mapContainerView.isHidden = true
-//        arContainerView.isHidden = true
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
         self.title = placeArr.placeName
-        let dVC = descriptionContainerView.subviews.first?.next as? DescriptionVC
-        dVC?.descriptionTextView.text = placeArr.placeDescription
-    
+        navbarOptions()
+        showData()
     }
 
     @IBAction func selectSection(_ sender: UISegmentedControl) {
@@ -44,10 +36,13 @@ class SegmentedControlVC: UIViewController {
             mapContainerView.isHidden = true
             arContainerView.isHidden = false
         default:
-//            descriptionContainerView.isHidden = false
-//            mapContainerView.isHidden = true
-//            arContainerView.isHidden = true
-        break
+            break
         }
+    }
+    func showData() {
+        let descriptionVC = descriptionContainerView.subviews.first?.next as? DescriptionVC
+//        let mapVC = mapContainerView.subviews.first?.next as? MapVC
+//        let arkitVC = arContainerView.subviews.first?.next as? ARkitVC
+        descriptionVC?.descriptionTextView.text = placeArr.placeDescription
     }
 }
