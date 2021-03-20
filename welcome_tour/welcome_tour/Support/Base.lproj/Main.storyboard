@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3i-xg-vKy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3i-xg-vKy">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -104,7 +104,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-fm-oxC">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" id="3HH-Kv-6pF">
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" id="3HH-Kv-6pF">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sa8-R1-UiG">
@@ -130,16 +130,27 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osQ-Ml-5R2">
                                                     <rect key="frame" x="80" y="5" width="290" height="50"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-ef-Gxk">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="armeniaFlag" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-ef-Gxk" customClass="RoundedImage" customModule="welcome_tour" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="zQd-ef-Gxk" secondAttribute="height" multiplier="1:1" id="NOk-XR-cHR"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                            <real key="value" value="26"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -198,7 +209,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gge-9q-0bx">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" id="mav-BK-OY4">
+                            <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" id="mav-BK-OY4">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nv6-nr-g3H">
@@ -238,7 +249,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pR2-SJ-hgJ">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" id="3oj-LI-NZ7">
+                            <visualEffectView opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" id="3oj-LI-NZ7">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E3o-tA-6ba">
@@ -252,7 +263,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Այս հավելվածը նախատեսված է բոլոր նրանց համար, ովքեր ճանաչում են Հայաստանը կամ ուզում են ճանաչել այն և նրանց համար, ովքեր ապրում են Հայաստանում կամ արտերկրում: Այստեղ ցույց է տրված ընդամենը մշակութային հսկայական ժառանգության մի մասը միայն: Հայ ժողովուրդը ունի հազարամյակների պատմություն եւ երկիր մոլորակի վրա առաջին պետությունն է, որ քրիստոնեությունը ընդունել է որպես պետական կրոն (301թ.): Այստեղ ամեն ինչն ունի իր պատմությունը: Հավելվածում ներառված են շուրջ 36 զբոսաշրջային վայրեր, որոնցում ներկայացված են նկարներ, տեղեկություն գտնվելու վայրի և պատմության մասին: Տեղ են գտել ամենատարբեր ժամանակահատվածների կառույցներ, շինություններ (մ.թ.ա._ից մինչեւ մեր օրեր) եւ բնության կողմից տրված հրաշքներ: Կան նույնիսկ այնպիսի վայրեր, որոնց մասին անգամ համացանցում չեք կարող գտնել որեւէ տեղեկություն… Հավելվածի նպատակն է ծանոթացնել եւ ցույց տալ հայկական լեռնաշխարհում գտնվող պատմամշակութային վայրերը: Ով ապրում է Հայաստանում, ուրիշ տեղ չի կարողանում երկար ապրել, ով այցելել է որպես զբոսաշրջիկ, հիացած է գնացել (կամ շատ դեպքերում մնացել է) եւ խոստացել անպայման վերադառնալ Հայաստան: Իսկ չայցելածները կարող են իմանալ, որ կյանքում դեռ շատ բաներ չեն տեսել... Բոլորիդ ուրախ տրամադրություն եւ “Welcome to Armenia”...</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -306,7 +317,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="systemUltraThinMaterialLight"/>
+                                <vibrancyEffect>
+                                    <blurEffect style="systemUltraThinMaterialLight"/>
+                                </vibrancyEffect>
                             </visualEffectView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-lI-hcR">
                                 <rect key="frame" x="5" y="88" width="380" height="673"/>
@@ -420,7 +433,7 @@
                             <constraint firstItem="3vq-4e-fw0" firstAttribute="leading" secondItem="FoP-rX-WSI" secondAttribute="leading" id="xSb-AB-KsD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="paperplane" catalog="system" landscapeImage="paperplane" largeContentSizeImage="paperplane" selectedImage="paperplane.fill" id="XoY-Ce-DOz"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="XoY-Ce-DOz"/>
                     <navigationItem key="navigationItem" id="OcO-mO-M1P"/>
                     <connections>
                         <outlet property="tableView" destination="jYc-lI-hcR" id="bze-hc-nc4"/>
@@ -484,9 +497,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-N5-iBM">
-                                                    <rect key="frame" x="105" y="59" width="262.66666666666669" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Արամե, Արաբո Իսպիրյան, Միհրան Ծառուկյան, Մկրտիչ Արզումանյան" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-N5-iBM">
+                                                    <rect key="frame" x="105" y="48.666666666666657" width="262.66666666666669" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="sHr-7w-nph"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -496,9 +512,9 @@
                                                         <constraint firstAttribute="width" secondItem="Ano-6P-voP" secondAttribute="height" multiplier="1:1" id="63K-l9-Q3x"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CET-Gj-iv3">
-                                                    <rect key="frame" x="105" y="21" width="262.66666666666669" height="23"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CET-Gj-iv3">
+                                                    <rect key="frame" x="105" y="18.666666666666668" width="262.66666666666669" height="24.000000000000004"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" systemColor="systemYellowColor"/>
@@ -508,10 +524,10 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="CET-Gj-iv3" firstAttribute="leading" secondItem="Ano-6P-voP" secondAttribute="trailing" constant="10" id="9ku-uc-AY8"/>
-                                                <constraint firstItem="CET-Gj-iv3" firstAttribute="top" secondItem="UMc-yz-K8l" secondAttribute="topMargin" constant="10" id="AKQ-P9-pBB"/>
+                                                <constraint firstItem="CET-Gj-iv3" firstAttribute="top" secondItem="UMc-yz-K8l" secondAttribute="topMargin" multiplier="0.8" constant="10" id="AKQ-P9-pBB"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ano-6P-voP" secondAttribute="bottom" constant="10" id="MJK-a5-jUa"/>
-                                                <constraint firstItem="fDa-N5-iBM" firstAttribute="top" secondItem="CET-Gj-iv3" secondAttribute="bottom" constant="15" id="TdJ-0K-RI9"/>
                                                 <constraint firstItem="Ano-6P-voP" firstAttribute="leading" secondItem="UMc-yz-K8l" secondAttribute="leading" constant="15" id="Txu-xw-g7P"/>
+                                                <constraint firstItem="fDa-N5-iBM" firstAttribute="top" secondItem="CET-Gj-iv3" secondAttribute="bottom" multiplier="0.9" constant="10" id="Wki-ZD-URv"/>
                                                 <constraint firstAttribute="trailing" secondItem="CET-Gj-iv3" secondAttribute="trailing" constant="15" id="bk1-JM-mT2"/>
                                                 <constraint firstItem="fDa-N5-iBM" firstAttribute="leading" secondItem="Ano-6P-voP" secondAttribute="trailing" constant="10" id="duM-GH-v6H"/>
                                                 <constraint firstAttribute="trailing" secondItem="fDa-N5-iBM" secondAttribute="trailing" constant="15" id="lil-SV-Rh7"/>
@@ -562,13 +578,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="keg-9m-4cK">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-dB-Kx3">
+                            <visualEffectView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-dB-Kx3">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hjm-c3-J7j">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.20000000000000001" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hjm-c3-J7j">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <blurEffect style="systemUltraThinMaterialLight"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <blurEffect style="regular"/>
                             </visualEffectView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AED-yx-349">
                                 <rect key="frame" x="20" y="98" width="350" height="32"/>
@@ -633,7 +651,9 @@
                     <connections>
                         <outlet property="arContainerView" destination="kgB-cg-SZj" id="iXs-CZ-tfz"/>
                         <outlet property="descriptionContainerView" destination="RU9-HZ-eJz" id="aPr-Bs-tYE"/>
+                        <outlet property="effect" destination="rfv-dB-Kx3" id="dvl-TT-jZU"/>
                         <outlet property="mapContainerView" destination="3kn-lC-Az6" id="Y0u-nf-Rjb"/>
+                        <outlet property="segmentedControl" destination="AED-yx-349" id="Q7g-zm-RVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woB-ss-Wze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -651,13 +671,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="PdA-Yi-OBG">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-zg-QyC">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCv-zg-QyC">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mdr-6J-xZ5">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="systemUltraThinMaterialLight"/>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-ey-0Ek">
                                 <rect key="frame" x="0.0" y="44" width="390" height="41.666666666666657"/>
@@ -668,8 +688,10 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0n-sx-KYb">
-                                <rect key="frame" x="10" y="44" width="78.666666666666671" height="41.666666666666657"/>
-                                <state key="normal" title="cancel" image="arrowshape.turn.up.left.2" catalog="system"/>
+                                <rect key="frame" x="9.9999999999999964" y="44" width="52.666666666666657" height="41.666666666666657"/>
+                                <state key="normal" title="Back" image="chevron.backward" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="backBtn:" destination="eq6-tD-QVL" eventType="touchUpInside" id="UJJ-cW-Cha"/>
                                 </connections>
@@ -685,6 +707,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Մենք ենք, մեր սարերը" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-6g-GLs">
@@ -695,19 +723,19 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ինգա Անուշ Արշակյաններ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-P6-5Ze">
-                                <rect key="frame" x="0.0" y="513" width="390" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ինգա Անուշ Արշակյաններ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-P6-5Ze">
+                                <rect key="frame" x="0.0" y="513" width="390" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tx7-23-WWw">
-                                <rect key="frame" x="35" y="606" width="320" height="4"/>
+                                <rect key="frame" x="35" y="586" width="320" height="4"/>
                                 <color key="trackTintColor" systemColor="groupTableViewBackgroundColor"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFC-ao-BNw">
-                                <rect key="frame" x="35" y="615" width="41.333333333333343" height="19"/>
+                                <rect key="frame" x="35" y="595" width="41.333333333333343" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -715,7 +743,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVc-4G-0QM">
-                                <rect key="frame" x="313.66666666666669" y="615" width="41.333333333333314" height="19"/>
+                                <rect key="frame" x="313.66666666666669" y="595" width="41.333333333333314" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -723,7 +751,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="E3M-sl-9i8">
-                                <rect key="frame" x="20" y="654" width="350" height="59"/>
+                                <rect key="frame" x="20" y="634" width="350" height="59"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82w-wH-uKJ">
                                         <rect key="frame" x="0.0" y="9.6666666666666288" width="69" height="40"/>
@@ -793,7 +821,7 @@
                                 </subviews>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hlt-82-MMH">
-                                <rect key="frame" x="48" y="743" width="294" height="31"/>
+                                <rect key="frame" x="48" y="723" width="294" height="31"/>
                                 <imageReference key="minimumValueImage" image="volume.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                                 <imageReference key="maximumValueImage" image="volume.3.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                                 <color key="maximumTrackTintColor" systemColor="groupTableViewBackgroundColor"/>
@@ -835,7 +863,7 @@
                             <constraint firstItem="E3M-sl-9i8" firstAttribute="leading" secondItem="Pct-lO-3RD" secondAttribute="leading" constant="20" id="hve-rz-TSH"/>
                             <constraint firstItem="qfF-Ay-t2F" firstAttribute="top" secondItem="OpA-ey-0Ek" secondAttribute="bottom" constant="60" id="iZ5-Du-Dy8"/>
                             <constraint firstItem="n0n-sx-KYb" firstAttribute="top" secondItem="Pct-lO-3RD" secondAttribute="top" id="iyb-VF-wWy"/>
-                            <constraint firstItem="Tx7-23-WWw" firstAttribute="top" secondItem="2hU-P6-5Ze" secondAttribute="bottom" constant="70" id="j7u-M9-ysc"/>
+                            <constraint firstItem="Tx7-23-WWw" firstAttribute="top" secondItem="2hU-P6-5Ze" secondAttribute="bottom" constant="50" id="j7u-M9-ysc"/>
                             <constraint firstItem="n0n-sx-KYb" firstAttribute="centerY" secondItem="OpA-ey-0Ek" secondAttribute="centerY" id="kds-JG-8o7"/>
                             <constraint firstItem="Hlt-82-MMH" firstAttribute="top" secondItem="E3M-sl-9i8" secondAttribute="bottom" constant="30" id="ozX-Dz-PnT"/>
                             <constraint firstAttribute="trailing" secondItem="PdA-Yi-OBG" secondAttribute="trailing" id="pzA-Y2-oEl"/>
@@ -849,9 +877,9 @@
                             <constraint firstAttribute="trailing" secondItem="2hU-P6-5Ze" secondAttribute="trailing" id="zb1-an-D6W"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oeA-50-QeP"/>
                     <connections>
                         <outlet property="artistSongLbl" destination="2hU-P6-5Ze" id="DsC-Oz-PYc"/>
+                        <outlet property="blurEffect" destination="gCv-zg-QyC" id="avd-BR-9oe"/>
                         <outlet property="coverImage" destination="qfF-Ay-t2F" id="GxF-Eg-uRm"/>
                         <outlet property="currentTimeLbl" destination="SFC-ao-BNw" id="PfP-jl-fjQ"/>
                         <outlet property="durationLbl" destination="vVc-4G-0QM" id="bKW-RP-MWz"/>
@@ -864,7 +892,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffI-RB-O3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="347"/>
+            <point key="canvasLocation" x="920" y="346.91943127962082"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="TFa-H4-wR4">
@@ -875,6 +903,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="d2Y-LL-oH6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Who-fp-1B7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -885,7 +914,7 @@
         <scene sceneID="avJ-bL-ICV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jF-hX-uCR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="paperplane" catalog="system" selectedImage="paperplane.fill" id="3mI-98-ql8"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="3mI-98-ql8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K9E-eB-kXM">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -908,6 +937,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="707"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Hu-hc-3WD">
+                                <rect key="frame" x="0.0" y="180" width="390" height="527"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Արագածը Հայաստանի ամենաբարձր լեռն է, իսկ Հայկական լեռնաշխարհում՝ չորրորդը: Այն ունի 4 գագաթ: Ամենաբարձրը հյուսիսայինն է՝ 4090մ, հետո գալիս են Հյուսիսարևմտյանը՝ 4080մ, Արևելյանը՝ 3916մ և Հարավայինը՝ 3879մ: Արագածի կլիման փոփոխվում է ըստ բարձրության: Ստորոտից (1000մ) մինչև գագաթը տարեկան միջին ջերմաստիճանը տատանվում է -3°C - +10°C, տեղումները՝ 300-900մմ և ավելի: Լանջերին ամռանը չափավոր տաք է, ձմռանը՝ ցուրտ: Տարածքը հարուստ է բուսականությամբ, շատ են կենդանական աշխարհի ներկայացուցիչները: Լեռան լանջերից բխում են հարյուրավոր սառնորակ աղբյուրներ, որոնցից գոյանում են Քասաղ, Գեղարոտ, Ամբերդ, Մանթաշ, Գեղաձոր, Ծաղկահովիտ և այլ գետակներ: Կան տուֆի, պեմզայի, պեռլիտի պաշարներ: Արագած լեռը սերտորեն կապված է Հայաստանի զբոսաշրջիկության հետ: Այն հայ ժողովրդի ամենասիրված լեռներից է: Արագածին են նվիրված բազմաթիվ երգեր ու բանաստեղծություններ:</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-Rc-ra1" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="180"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -915,36 +953,16 @@
                                     <constraint firstAttribute="height" constant="180" id="NHz-Vn-hNa"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-WY-WpD">
-                                <rect key="frame" x="0.0" y="180" width="390" height="527"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Hu-hc-3WD">
-                                        <rect key="frame" x="15" y="0.0" width="360" height="527"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.49537471849091197" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="8Hu-hc-3WD" firstAttribute="top" secondItem="PAL-WY-WpD" secondAttribute="top" id="JrF-nh-iio"/>
-                                    <constraint firstAttribute="bottom" secondItem="8Hu-hc-3WD" secondAttribute="bottom" id="Siq-cf-DAQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="8Hu-hc-3WD" secondAttribute="trailing" constant="15" id="bsS-SM-dIe"/>
-                                    <constraint firstItem="8Hu-hc-3WD" firstAttribute="leading" secondItem="PAL-WY-WpD" secondAttribute="leading" constant="15" id="plZ-v7-PLM"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s7H-uU-fY7"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8Hu-hc-3WD" firstAttribute="leading" secondItem="s7H-uU-fY7" secondAttribute="leading" id="9NM-pA-iPg"/>
                             <constraint firstItem="9IY-Rc-ra1" firstAttribute="top" secondItem="iel-Vk-tpv" secondAttribute="top" id="CIS-dI-wmN"/>
-                            <constraint firstAttribute="trailing" secondItem="PAL-WY-WpD" secondAttribute="trailing" id="MfX-Ld-3Ot"/>
-                            <constraint firstItem="PAL-WY-WpD" firstAttribute="leading" secondItem="iel-Vk-tpv" secondAttribute="leading" id="aZ1-8h-s04"/>
-                            <constraint firstItem="PAL-WY-WpD" firstAttribute="top" secondItem="9IY-Rc-ra1" secondAttribute="bottom" id="bB0-Lm-VSl"/>
-                            <constraint firstAttribute="bottom" secondItem="PAL-WY-WpD" secondAttribute="bottom" id="e97-4d-B3u"/>
+                            <constraint firstItem="s7H-uU-fY7" firstAttribute="bottom" secondItem="8Hu-hc-3WD" secondAttribute="bottom" id="Prk-kd-mMQ"/>
                             <constraint firstItem="9IY-Rc-ra1" firstAttribute="leading" secondItem="iel-Vk-tpv" secondAttribute="leading" id="gSD-X7-6dc"/>
+                            <constraint firstItem="8Hu-hc-3WD" firstAttribute="top" secondItem="9IY-Rc-ra1" secondAttribute="bottom" id="oOJ-kr-NHS"/>
+                            <constraint firstItem="s7H-uU-fY7" firstAttribute="trailing" secondItem="8Hu-hc-3WD" secondAttribute="trailing" id="ph7-nG-Xa4"/>
                             <constraint firstAttribute="trailing" secondItem="9IY-Rc-ra1" secondAttribute="trailing" id="qBx-UO-2Of"/>
                         </constraints>
                     </view>
@@ -955,7 +973,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqB-XD-F1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1942" y="1262"/>
+            <point key="canvasLocation" x="-1943.0769230769231" y="1261.4928909952605"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="Alc-wd-QvH">
@@ -1053,22 +1071,26 @@
         <designable name="qfF-Ay-t2F">
             <size key="intrinsicContentSize" width="850" height="500"/>
         </designable>
+        <designable name="zQd-ef-Gxk">
+            <size key="intrinsicContentSize" width="50" height="50"/>
+        </designable>
     </designables>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="222" width="850" height="500"/>
-        <image name="arrowshape.turn.up.left.2" catalog="system" width="128" height="86"/>
+        <image name="armeniaFlag" width="50" height="50"/>
         <image name="background" width="533" height="799"/>
         <image name="backward" width="62" height="40"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="coming_soon" width="548" height="550"/>
         <image name="forward" width="62" height="40"/>
         <image name="garni" width="870" height="581"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="music" width="735" height="974"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
         <image name="next" width="62" height="40"/>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="pause" width="60" height="59"/>
         <image name="prev" width="61" height="40"/>
         <image name="square.stack.3d.up" catalog="system" width="128" height="124"/>
@@ -1077,6 +1099,9 @@
         <image name="volume.fill" catalog="system" width="128" height="128"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

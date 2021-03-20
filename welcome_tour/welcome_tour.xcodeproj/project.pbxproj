@@ -27,6 +27,7 @@
 		CE191DB425E66E53000A2A51 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191DB325E66E53000A2A51 /* LanguageTableViewCell.swift */; };
 		CE191DB825E66EEF000A2A51 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191DB725E66EEF000A2A51 /* LanguageViewController.swift */; };
 		CE191DBD25E69952000A2A51 /* AboutAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191DBC25E69952000A2A51 /* AboutAppVC.swift */; };
+		CE3003A32605F20A002A0316 /* ButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3003A22605F209002A0316 /* ButtonExtention.swift */; };
 		CE962C8925E0D606002EAF55 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962C8825E0D606002EAF55 /* Library.swift */; };
 		CE962C9125E0D678002EAF55 /* Audio_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962C9025E0D678002EAF55 /* Audio_TableViewController.swift */; };
 		CE962C9425E0D6C9002EAF55 /* Audio_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE962C9325E0D6C9002EAF55 /* Audio_TableViewCell.swift */; };
@@ -69,6 +70,7 @@
 		CE191DB325E66E53000A2A51 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		CE191DB725E66EEF000A2A51 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		CE191DBC25E69952000A2A51 /* AboutAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppVC.swift; sourceTree = "<group>"; };
+		CE3003A22605F209002A0316 /* ButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtention.swift; sourceTree = "<group>"; };
 		CE962C8825E0D606002EAF55 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		CE962C9025E0D678002EAF55 /* Audio_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_TableViewController.swift; sourceTree = "<group>"; };
 		CE962C9325E0D6C9002EAF55 /* Audio_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_TableViewCell.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				836E72D525DFA15300EC2631 /* RoundedShadowView.swift */,
+				CE3003A22605F209002A0316 /* ButtonExtention.swift */,
 				83A8DC4325EB922E008C73BD /* RoundedImage.swift */,
 				83D48DAC260230D30024E63F /* CustomNavigationBar.swift */,
 			);
@@ -444,6 +447,7 @@
 				CE962CDD25E57FD9002EAF55 /* VideoVC.swift in Sources */,
 				831C04C425FA6287007A5659 /* DataModel.swift in Sources */,
 				836E72F125DFD65400EC2631 /* ARkitVC.swift in Sources */,
+				CE3003A32605F20A002A0316 /* ButtonExtention.swift in Sources */,
 				CECA7D9625DAD97900E7127E /* SceneDelegate.swift in Sources */,
 				CE962C9125E0D678002EAF55 /* Audio_TableViewController.swift in Sources */,
 				831C04E025FB51BE007A5659 /* CoordinatesModel.swift in Sources */,

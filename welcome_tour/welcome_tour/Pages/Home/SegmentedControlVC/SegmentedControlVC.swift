@@ -8,13 +8,27 @@
 import UIKit
 
 class SegmentedControlVC: UIViewController {
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var descriptionContainerView: UIView!
     @IBOutlet weak var mapContainerView: UIView!
     @IBOutlet weak var arContainerView: UIView!
+    @IBOutlet weak var effect: UIVisualEffectView!
     var placeArr = DataModel()
     var place = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.effect.alpha = 0.4
+        
+        if LocalizableManager.type == "hy" {
+            let font = UIFont.systemFont(ofSize: 12)
+            segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
+        }
+        
+        
+        segmentedControl.setTitle(LocalizableManager.getLocalizable(key: "Desc"), forSegmentAt: 0)
+        segmentedControl.setTitle(LocalizableManager.getLocalizable(key: "Map"), forSegmentAt: 1)
+        
         self.title = placeArr.placeName
         navbarOptions()
         showData()

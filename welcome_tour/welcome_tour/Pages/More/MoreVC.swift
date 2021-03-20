@@ -57,9 +57,9 @@ extension MoreVC: UITableViewDelegate, UITableViewDataSource {
         cell.preservesSuperviewLayoutMargins = false
         cell.layoutMargins = UIEdgeInsets.zero
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowColor = UIColor.blue.cgColor
-        cell.layer.shadowRadius = 2
-        cell.layer.shadowOpacity = 0.25
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowRadius = 4
+        cell.layer.shadowOpacity = 0.7
         cell.layer.masksToBounds = false;
         cell.clipsToBounds = false;
         cell.moreLbl.text = LocalizableManager.getLocalizable(key: self.nameSetings[indexPath.row])

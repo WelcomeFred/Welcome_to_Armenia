@@ -23,6 +23,7 @@ class Audio_ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var currentTimeLbl: UILabel!
     @IBOutlet weak var durationLbl: UILabel!
     
+    @IBOutlet weak var blurEffect: UIVisualEffectView!
     
     
     var time = 0
@@ -43,7 +44,10 @@ class Audio_ViewController: UIViewController, AVAudioPlayerDelegate {
         artistSongLbl.text = library[trackID]["artist"]!
         titleSongLbl.text = library[trackID]["title"]!
 
+        self.blurEffect.alpha = 0.5
         
+        slider.setThumbImage(UIImage(named: "apricot"), for: .normal)
+        slider.setThumbImage(UIImage(named: "apricot"), for: UIControl.State.highlighted)
 //        progressView.transform = progressView.transform.scaledBy(x: 1, y: 3)
 //        progressView.progress = 0.0
 //        progressView.layer.cornerRadius = 0
@@ -108,8 +112,10 @@ class Audio_ViewController: UIViewController, AVAudioPlayerDelegate {
         }
      }
     
-    @IBAction func playPause(_ sender: Any) {
-                
+    @IBAction func playPause(_ sender: UIButton) {
+        
+        sender.pulstate()
+        
         if (audioPlayer.isPlaying == true) {
             audioPlayer.pause()
             updateProgressView()
