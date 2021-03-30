@@ -1,0 +1,30 @@
+PODS:
+  - GoogleMaps (4.2.0):
+    - GoogleMaps/Maps (= 4.2.0)
+  - GoogleMaps/Base (4.2.0)
+  - GoogleMaps/Maps (4.2.0):
+    - GoogleMaps/Base
+  - iCarousel (1.8.3)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - iCarousel
+  - ImageSlideshow (~> 1.9.0)
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - iCarousel
+    - ImageSlideshow
+
+SPEC CHECKSUMS:
+  GoogleMaps: eb03e327edfd70b06de1e6e321653f73712df7ad
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+
+PODFILE CHECKSUM: 96b55b822944c549a13dd3a8349a7bf4047b5fb9
+
+COCOAPODS: 1.10.1
