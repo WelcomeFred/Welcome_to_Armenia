@@ -48,14 +48,14 @@ class SegmentedControlVC: UIViewController {
         let mapVC = mapContainerView.subviews.first?.next as? MapVC
         guard let placeData = place else {return}
         descriptionVC?.descriptionTextView.text = LocalizableManager.getLocalizable(key: placeData.description)
-        if let coordinates = placeData.mapCoordinates {
-            mapVC?.placeCoordinate = coordinates
-            mapVC?.placeTitle = LocalizableManager.getLocalizable(key: placeData.placeTitle)
-            mapVC?.showRouteButton.isHidden = false
+        mapVC?.placeTitle = LocalizableManager.getLocalizable(key: placeData.placeTitle)
+        mapVC?.placeCoordinate = placeData.mapCoordinates
+
+        if placeData.length == "" {
+            mapVC?.showRouteButton.isHidden = true
         }
         else {
-            mapVC?.placeTitle = ""
-            mapVC?.showRouteButton.isHidden = true
+            mapVC?.showRouteButton.isHidden = false
         }
     }
 }

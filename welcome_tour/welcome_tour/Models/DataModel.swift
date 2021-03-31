@@ -356,18 +356,18 @@ enum Places: Int, CaseIterable {
         
     }
     
-    var mapCoordinates: CLLocationCoordinate2D? {
+    var mapCoordinates: CLLocationCoordinate2D {
         switch self {
             case .akhtala:
-                return CLLocationCoordinate2D(latitude: 41.1511723, longitude: 44.7616789)
+                return CLLocationCoordinate2D(latitude: 41.150639, longitude: 44.763519)
             case .amberd:
-                return CLLocationCoordinate2D(latitude: 40.388590, longitude: 44.226601)
+                return CLLocationCoordinate2D(latitude: 40.387510, longitude: 44.228220)
             case .aragatsMount:
-                return CLLocationCoordinate2D(latitude: 40.523152, longitude: 44.195141)
+                return CLLocationCoordinate2D(latitude: 40.523190, longitude: 44.194583)
             case .araratMount:
-                return nil
+                return CLLocationCoordinate2D(latitude: 39.702415, longitude: 44.299042)
             case .byurakanObservatory:
-                return CLLocationCoordinate2D(latitude: 40.331100, longitude: 44.268554)
+                return CLLocationCoordinate2D(latitude: 40.330324, longitude: 44.273401)
             case .gandzasar:
                 return CLLocationCoordinate2D(latitude: 40.057309, longitude: 46.530667)
             case .garni:
@@ -375,13 +375,13 @@ enum Places: Int, CaseIterable {
             case .geghard:
                 return CLLocationCoordinate2D(latitude: 40.140476, longitude: 44.818420)
             case .dadivank:
-                return nil
+                return CLLocationCoordinate2D(latitude: 40.161636, longitude: 46.288378)
             case .dvin:
-                return CLLocationCoordinate2D(latitude: 40.004696, longitude: 44.578671)
+                return CLLocationCoordinate2D(latitude: 40.004480, longitude: 44.578386)
             case .zoratsKarer:
-                return CLLocationCoordinate2D(latitude: 39.551666, longitude: 46.028931)
+                return CLLocationCoordinate2D(latitude: 39.550675, longitude: 46.028577)
             case .zvartnots:
-                return CLLocationCoordinate2D(latitude: 40.160296, longitude: 44.336639)
+                return CLLocationCoordinate2D(latitude: 40.160224, longitude: 44.336336)
             case .etchmiadzinCathedral:
                 return CLLocationCoordinate2D(latitude: 40.161990, longitude: 44.291152)
             case .lastiver:
@@ -401,7 +401,7 @@ enum Places: Int, CaseIterable {
             case .hankavan:
                 return CLLocationCoordinate2D(latitude: 40.635248, longitude: 44.485040)
             case .ghazanchetsots:
-                return nil
+                return CLLocationCoordinate2D(latitude: 39.758728, longitude: 46.747512)
             case .marmashenMonastery:
                 return CLLocationCoordinate2D(latitude: 40.842837, longitude: 43.755731)
             case .marmarner:
@@ -433,7 +433,3 @@ enum Places: Int, CaseIterable {
         }
     }
 }
-
-// Ararat [39.678543,44.337262]
-// Dadivank [40.141209,44.513472]
-// Ghazanchecoc [39.758762,46.747567]

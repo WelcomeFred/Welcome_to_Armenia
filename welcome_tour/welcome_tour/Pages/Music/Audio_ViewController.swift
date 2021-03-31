@@ -46,9 +46,7 @@ class Audio_ViewController: UIViewController, AVAudioPlayerDelegate {
         
         artistSongLbl.text = library[trackID]["artist"]!
         titleSongLbl.text = library[trackID]["title"]!
-        
-        self.blurEffect.alpha = 0.5
-        
+                
         slider.setThumbImage(UIImage(named: "apricot"), for: .normal)
         slider.setThumbImage(UIImage(named: "apricot"), for: UIControl.State.highlighted)
 
