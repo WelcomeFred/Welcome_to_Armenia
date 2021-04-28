@@ -53,7 +53,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="63H-pw-q5e" firstAttribute="leading" secondItem="Huq-wt-t1X" secondAttribute="leading" id="UbR-5I-6ju"/>
                                                         <constraint firstAttribute="bottom" secondItem="63H-pw-q5e" secondAttribute="bottom" id="V1O-JT-gOq"/>
@@ -182,7 +182,7 @@
                                                             <size key="shadowOffset" width="1" height="1"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="osQ-Ml-5R2" secondAttribute="trailing" constant="10" id="17f-EI-pN8"/>
                                                         <constraint firstItem="osQ-Ml-5R2" firstAttribute="leading" secondItem="zQd-ef-Gxk" secondAttribute="trailing" constant="10" id="1HY-ti-bC0"/>
@@ -419,7 +419,7 @@
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.93345984634088008" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="ddt-Wo-f5m" firstAttribute="top" secondItem="3ij-in-qb5" secondAttribute="bottom" constant="1" id="1SC-yn-AEz"/>
                                                         <constraint firstAttribute="trailing" secondItem="3ij-in-qb5" secondAttribute="trailing" constant="5" id="5LW-GY-4ZH"/>
@@ -571,7 +571,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="fDa-N5-iBM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CET-Gj-iv3" secondAttribute="bottom" constant="10" id="3fw-Fv-2pr"/>
                                                         <constraint firstAttribute="trailing" secondItem="CET-Gj-iv3" secondAttribute="trailing" constant="20" id="4wz-Xf-5Cj"/>
@@ -1146,6 +1146,7 @@
                     <tabBarItem key="tabBarItem" title="More" image="square.stack.3d.up" catalog="system" selectedImage="square.stack.3d.up.fill" id="m18-eF-ezj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KFj-3a-UL1">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
