@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3i-xg-vKy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3i-xg-vKy">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -37,7 +37,7 @@
                                 <color key="tintColor" name="AccentColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" showsReorderControl="YES" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell" rowHeight="60" id="GFC-Td-jHl" customClass="MoreTableViewCell" customModule="welcome_tour" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="60"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GFC-Td-jHl" id="zaw-yw-wb2">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
@@ -147,7 +147,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="70" id="zot-6j-qYk" customClass="LanguageTableViewCell" customModule="welcome_tour" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="70"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zot-6j-qYk" id="eAJ-rP-Umh">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
@@ -373,7 +373,7 @@
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="0.34981728897613734" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell alpha="0.80000001192092896" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="180" id="6wj-iM-dZf" customClass="MyTableViewCell" customModule="welcome_tour" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="380" height="180"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="380" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6wj-iM-dZf" id="HgT-DW-Ueh">
                                             <rect key="frame" x="0.0" y="0.0" width="380" height="180"/>
@@ -538,7 +538,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="110" id="k4M-Tp-SbF" customClass="Audio_TableViewCell" customModule="welcome_tour" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="110"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k4M-Tp-SbF" id="UMc-yz-K8l">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="110"/>
@@ -1048,7 +1048,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Hu-hc-3WD">
-                                <rect key="frame" x="0.0" y="180" width="390" height="527"/>
+                                <rect key="frame" x="0.0" y="260" width="390" height="447"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Արագածը Հայաստանի ամենաբարձր լեռն է, իսկ Հայկական լեռնաշխարհում՝ չորրորդը: Այն ունի 4 գագաթ: Ամենաբարձրը հյուսիսայինն է՝ 4090մ, հետո գալիս են Հյուսիսարևմտյանը՝ 4080մ, Արևելյանը՝ 3916մ և Հարավայինը՝ 3879մ: Արագածի կլիման փոփոխվում է ըստ բարձրության: Ստորոտից (1000մ) մինչև գագաթը տարեկան միջին ջերմաստիճանը տատանվում է -3°C - +10°C, տեղումները՝ 300-900մմ և ավելի: Լանջերին ամռանը չափավոր տաք է, ձմռանը՝ ցուրտ: Տարածքը հարուստ է բուսականությամբ, շատ են կենդանական աշխարհի ներկայացուցիչները: Լեռան լանջերից բխում են հարյուրավոր սառնորակ աղբյուրներ, որոնցից գոյանում են Քասաղ, Գեղարոտ, Ամբերդ, Մանթաշ, Գեղաձոր, Ծաղկահովիտ և այլ գետակներ: Կան տուֆի, պեմզայի, պեռլիտի պաշարներ: Արագած լեռը սերտորեն կապված է Հայաստանի զբոսաշրջիկության հետ: Այն հայ ժողովրդի ամենասիրված լեռներից է: Արագածին են նվիրված բազմաթիվ երգեր ու բանաստեղծություններ:</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -1057,10 +1057,10 @@
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-Rc-ra1" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="260"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="NHz-Vn-hNa"/>
+                                    <constraint firstAttribute="width" secondItem="9IY-Rc-ra1" secondAttribute="height" multiplier="3:2" id="60D-no-0OP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1197,7 +1197,7 @@
         <image name="forward" width="62" height="40"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="music" width="735" height="974"/>
+        <image name="music" width="1600" height="1600"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
         <image name="next" width="62" height="40"/>
